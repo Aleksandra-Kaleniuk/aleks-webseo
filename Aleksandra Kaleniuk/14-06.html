@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<style type="text/css">
+		ul {
+			list-style: none;
+		}
+		.menu a {
+			text-decoration: none; 
+			color: #000;
+			padding: 15px;
+		}
+		.menu >li {
+			display: inline-block;
+			background-color: #e7e7e7;
+			border-left: 1px solid green;
+			border-right: 1px solid green;
+			padding: 10px 10px;
+			position: relative;
+
+		}
+		.menu .has-children ul {
+			display: none;
+		}
+		.menu .has-children:hover ul{
+			display: block;
+			position: absolute;
+			background-color: #e7e7e7;
+			padding: 10px;
+			margin-left: -10px;
+		}
+		ul.menu > li {
+			display: inline-block;
+		}
+		.has-children:before {
+			content: "-";
+		}
+		.has-children:after {
+			content: "+";
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			margin-top: -8px;
+		}
+	</style>
+</head>
+<body>
+<div class="menu-wrapper">
+	<ul class="menu">
+		<li><a href="/">Main</a></li>
+		<li class="has-children"><a href="contacts.html">Contacts</a>
+			<ul>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="hello.html">Hello</a></li>
+			</ul>
+			</li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="about.html">About us</a></li>
+	</ul>
+	<form method="post"></form>
+	<form id="myform" action="/action.php"></form>
+	<form id="type" name="">
+		<input type="text" name="login">
+		<input type="submit" value="click me">
+		<input type="radio" name="one">
+		<input type="radio" name="one">
+		<button type="submit">I'm button</button>
+	</form>
+</div>
+</body>
+</html>

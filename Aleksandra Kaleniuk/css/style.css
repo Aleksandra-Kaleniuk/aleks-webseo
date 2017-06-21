@@ -1,0 +1,38 @@
+h1{
+	color: green;
+}
+h2{
+	color: pink;
+	text-align: center;
+}
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 900px;
+}
+
+p {
+	text-decoration: underline;
+}
+
+*{
+	color: #f3a384;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active
+{
+	color: orange;
+}
+
+#agro {
+	color: red;
+}
+
+p a {
+	font-size: 60px;
+}
